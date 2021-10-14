@@ -1,10 +1,7 @@
 <template>
   <div>
-        <h1>Welcome to Random Blog</h1>
-        <main>
-          <PostBox/>
-        </main>
-    </div>
+      <PostBox/>
+  </div>
 </template>
 
 <script>

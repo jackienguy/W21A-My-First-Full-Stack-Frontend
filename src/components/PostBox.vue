@@ -1,30 +1,22 @@
 <template>
   <div>
-      <!-- User new tweet input box -->
-      <v-container class="pb-10 ml-6">
-        <v-row>
-                <v-col
-                class="ml-6"
-                cols="15"
-                md="10"
-                >
-                <v-textarea 
-                    v-model="content" 
-                    placeholder="Post here"
-                    counter: maxlength="200"
-                    background-color="grey lighten-1"
-                ></v-textarea>
-                </v-col>
-            </v-row>
-            <v-btn  
-            class="ml-6" 
-            @click="createPost"
-            >
-              Post
-            </v-btn>
-      </v-container>
-      <v-divider></v-divider> 
-      <UserPost/>
+      <!-- Post input box -->
+    <div>
+        <textarea 
+            v-model="content" 
+            placeholder="Post here"
+            rows="6"
+            cols="40"
+            counter: maxlength="200"
+            background-color="grey lighten-1"
+        ></textarea>
+        <button  
+        @click="createPost"
+        >
+            Post
+        </button>
+    </div>
+    <UserPost/>
   </div>
 </template>
 
