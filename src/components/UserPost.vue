@@ -32,7 +32,7 @@ import PostBody from "./PostBody.vue";
                     url: "http://127.0.0.1:5000/api/blog",
                     method: "GET",
                     params: {
-                        username: this.posts.username
+                        blogid: this.posts.blogid
                     }
                 }).then((response) =>{
                     console.log(response.data);
